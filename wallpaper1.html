@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face { 
+    font-family: euro;
+    src: url(eurostile.ttf);
+}
+
+body {
+    position: relative;
+    top: 70px;
+	color: white;
+	text-align: center;
+	font-family: euro;
+	font-size: 150%;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+    position: relative;
+    display: block;
+    padding: 20px;
+    float: left;
+    width: 33%;
+	height: 380px;
+    margin: auto;
+    top: 0px;
+	transition: 0.5s;
+}
+
+@media only screen and (max-width: 1440px) {
+	.responsive {
+		position: relative;
+		display: block;
+		padding: 20px;
+		float: left;
+		width: 33%;
+		height: 275px;
+		margin: auto;
+		top: 0px;
+		transition: 0.5s;
+	}
+}
+
+.responsive:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1024px) {
+body {
+    position: relative;
+    top: 0px;
+	color: white;
+	text-align: center;
+	font-family: eurostile;
+	font-size: 150%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  .responsive {
+    width: 50%;
+	height: 300px;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<p>Wallpapers made by me for Wallpaper Engine</p>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1790893452">
+      <img src="https://i.imgur.com/GfTZUJP.gif" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1626276593">
+      <img src="https://i.imgur.com/1VJxi7z.gif" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1818618341">
+      <img src="https://i.imgur.com/vSFXk3D.gif" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+</body>
+</html>
